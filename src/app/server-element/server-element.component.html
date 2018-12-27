@@ -4,8 +4,18 @@
   <div class="panel-heading">{{ element.name }}</div>
   <div class="panel-body">
     <p>
-      <strong *ngIf="element.type === 'server'" style="color: #ff2d27">{{ element.content }}</strong>
-      <em *ngIf="element.type === 'blueprint'">{{ element.content }}</em>
+      <strong *ngIf="element.type === 'server'" style="color: red">{{ element.content }}</strong>
+      <em *ngIf="element.type === 'blueprint'" style="color: blue">{{ element.content }}</em>
     </p>
   </div>
 </div>
+
+
+
+<!--<div class="container">-->
+  <!--<h2>Panel Heading</h2>-->
+  <!--<div class="panel panel-default">-->
+    <!--<div class="panel-heading">Panel Heading</div>-->
+    <!--<div class="panel-body">Panel Content</div>-->
+  <!--</div>-->
+<!--</div>-->
