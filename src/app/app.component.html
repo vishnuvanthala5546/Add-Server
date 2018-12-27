@@ -1,14 +1,14 @@
 <div class="container">
+<app-cockpit
+  (serverCreated)="onServerAdded($event)"
+  (blueprintCreated)="onBlueprintAdded($event)"
+></app-cockpit>
+  <hr>
   <div class="row">
     <div class="col-xs-12">
-      <h2>My Server</h2>
-      <button class="btn btn-info" (click)="onAddServer()">Add Server</button>
-      <br><br>
-      <ul class="list-group">
-        <li
-          class="list-group-item" *ngFor="let server of servers; let i = index"
-          (click)="onRemoveServer(i)">{{ server }}</li>
-      </ul>
+      <app-server-element
+        *ngFor="let serverElement of serverElements"
+          [srvElement]="serverElement"></app-server-element>
     </div>
   </div>
 </div>
