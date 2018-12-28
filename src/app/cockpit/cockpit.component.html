@@ -8,7 +8,11 @@
       class="form-control"
      #serverNameInput>
     <span>Server Content</span>
-    <input type="text" class="form-control" [(ngModel)]="newServerContent">
+    <!--<input type="text" class="form-control" [(ngModel)]="newServerContent">-->
+    <input
+      type="text"
+      class="form-control"
+      #serverContentInput>
     <br>
     <button class="btn btn-info"
             (click)="onAddServer(serverNameInput)">Add Server
