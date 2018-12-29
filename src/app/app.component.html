@@ -12,6 +12,7 @@
         <p>
           <strong *ngIf="serverElement.type === 'server'" style="color: red">{{ serverElement.content }}</strong>
           <em *ngIf="serverElement.type === 'blueprint'" style="color: blue">{{ serverElement.content }}</em>
+          <strong ngFor="serverElement.type"></strong>
         </p>
       </app-server-element>
     </div>
